@@ -18,18 +18,21 @@ const createNewDiv = document.createElement("div")
 const createNewDivP = document.createElement("p")
 const createNewDivh1 = document.createElement("h1")
 const addDivH1 = createNewDiv.appendChild(createNewDivh1)
-const addDivP =createNewDiv.appendChild(createNewDivP);
+const addDivP = createNewDiv.appendChild(createNewDivP);
 addDivH1.innerText = "Im in a div"
 addDivP.innerText = "ME TOO!"
 body.appendChild(createNewDiv)
 
+//event listeners
 
+const buttons = document.querySelectorAll("button")
 
-
-
-
-
-
+buttons.forEach((button)=>{
+    
+    button.addEventListener("keydown",()=>{
+        alert("Hello world!")
+    })
+})
 
 
 
